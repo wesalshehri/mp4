@@ -3,6 +3,7 @@ import { Track } from '../../types';
 
 type LastFmTrack = {
     name: string;
+    playcount: string;
     artist: {
         name: string;
     };
@@ -37,6 +38,7 @@ export async function GET() {
 
                 return {
                     name: track.name,
+                    playcount: track.playcount,
                     albumCover,
                 };
             })
