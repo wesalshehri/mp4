@@ -29,6 +29,7 @@ export async function POST(req: Request) {
         winCounts[body.name] = {
             name: body.name,
             albumCover: body.albumCover || '',
+            playcount: '0',
             wins: 1,
         };
     }
